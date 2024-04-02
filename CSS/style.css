@@ -249,7 +249,7 @@ ul li a:hover {
 .signup-cta:hover {
   background-color: white;
   background-size: cover;
-  padding: 7px 20px;
+  padding: 7px 10px;
   color: #38c947;
   text-decoration: none;
   border-radius: 5px;
@@ -345,15 +345,19 @@ h4 {
 .partners-logo {
   width: 100%;
 
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
   justify-content: center;
   flex-wrap: wrap;
-  padding: 50px 0px 50px 50px;
+  padding: 50px 0px 50px 0px;
 }
 .crypto-logos {
-  max-width: 90%;
+  width: 80%;
   display: flex;
+  flex-wrap: wrap;
   opacity: 0.6;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
 }
 /* what we offer section */
 .what-we-offer {
@@ -371,6 +375,7 @@ h4 {
   font-size: 60px;
   padding: 80px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .wwo-sections {
@@ -383,8 +388,8 @@ h4 {
 .wwo-section1 {
   background-color: black;
   max-width: 100%;
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   padding: 50px 50px;
   margin: 30px 30px 30px 30px;
   border-radius: 10px;
@@ -396,6 +401,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 h5 {
   font-size: 32px;
@@ -411,8 +417,8 @@ h6 {
 .wwo-section2 {
   background-color: #38c947;
   max-width: 100%;
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   padding: 50px 50px;
   margin: 30px 30px 30px 30px;
   border-radius: 10px;
@@ -423,8 +429,8 @@ h6 {
 .wwo-section3 {
   background-color: black;
   max-width: 100%;
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   padding: 50px 50px;
   margin: 30px 30px 30px 30px;
   border-radius: 10px;
@@ -658,7 +664,7 @@ h6 {
 }
 .footer-nav {
   display: flex;
-  padding: 50px 300px 0 300px;
+  padding: 50px 200px 0 200px;
   word-spacing: 50px;
 }
 .footer-nav li {
@@ -673,7 +679,7 @@ h6 {
 }
 .footer-email {
   margin: auto;
-  padding: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
 }
 .footer-email-box {
   padding: 20px 0 0 0;
