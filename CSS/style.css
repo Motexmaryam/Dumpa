@@ -335,6 +335,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-wrap: wrap;
 }
 .dashboard {
   max-width: 90%;
@@ -693,20 +694,529 @@ h6 {
   flex-wrap: wrap;
   flex-direction: row;
 }
-/* tablet view */
-@media only screen and (max-width: 1023px) {
+/* phone view */
+@media only screen and (max-width: 650px) {
+  /*stlye website background*/
+  body {
+    width: 100%;
+    background-color: #000;
+  }
+
+  .wrapper {
+    /* padding: 0; */
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #000;
+  }
+  /*Stlying navigation bar*/
   #menubar {
     display: flex;
     padding: 0 0px 0 0;
   }
+  div nav {
+    color: white;
+    padding: 70px 0 70px 0;
+    /* width: auto; */
+    display: flex;
+    width: 100%;
+    height: 100px;
+    font-family: lato;
+    font-size: 20px;
+    font-weight: 350;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .ul-nav {
     display: none;
+  }
+  ul {
+    display: inline-block;
+    word-spacing: 20px;
+    justify-content: center;
+  }
+
+  ul li {
+    display: inline-block;
+    justify-content: center;
+  }
+  ul li a {
+    text-decoration: none;
+    color: #38c947;
+    display: flex;
+    word-spacing: 0.5px;
+  }
+
+  ul li a:hover {
+    color: white;
   }
   .nav-cta {
     display: none;
   }
+  .signup-cta {
+    background-color: #38c947;
+    background-size: cover;
+    padding: 7px 10px 7px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 50px 50px;
+  }
+
+  .signup-cta:hover {
+    background-color: white;
+    background-size: cover;
+    padding: 7px 10px;
+    color: #38c947;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 50px 50px;
+  }
+  .login-cta {
+    background-color: black;
+    color: #38c947;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin-right: 30px;
+    background-size: 200px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  .login-cta:hover {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin-right: 30px;
+    background-size: 200px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+  }
   div .dumpa-logo {
     width: 200px;
-    padding: 0 10px 0 0;
+    padding: 0 150px 0 0;
+  }
+  /* styling hero section  */
+  .hero-section {
+    width: auto;
+    justify-content: center;
+  }
+  .hero-text {
+    text-align: center;
+    margin: 30px;
+  }
+
+  h1 {
+    font-size: 70px;
+    font-family: lato;
+  }
+
+  h4 {
+    font-size: 32px;
+    font-family: lato;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .hero-cta {
+    font-family: lato;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 0;
+    color: white;
+    background-color: #38c947;
+    border-radius: 5px;
+  }
+
+  .hero-cta:hover {
+    font-family: lato;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 0;
+    color: #38c947;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .dashboard-container {
+    justify-content: center;
+    max-width: 100%;
+    padding: 20px 0 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .dashboard {
+    max-width: 90%;
+    justify-content: center;
+    height: auto;
+  }
+
+  .partners-logo {
+    width: 100%;
+
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0px 50px 0px;
+  }
+  .crypto-logos {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.6;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+  }
+  /* what we offer section */
+  .what-we-offer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wwo-header {
+    text-align: center;
+    font-family: lato;
+    font-size: 60px;
+    padding: 80px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .wwo-sections {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 50px 0;
+  }
+  .wwo-section1 {
+    background-color: black;
+    max-width: 100%;
+    width: 250px;
+    height: 150px;
+    padding: 50px 50px;
+    margin: 30px 30px 30px 30px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  h5 {
+    font-size: 32px;
+    font-family: lato;
+    text-align: center;
+  }
+
+  h6 {
+    font-size: 14px;
+    font-family: lato;
+    text-align: center;
+  }
+  .wwo-section2 {
+    background-color: #38c947;
+    max-width: 100%;
+    width: 250px;
+    height: 150px;
+    padding: 50px 50px;
+    margin: 30px 30px 30px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wwo-section3 {
+    background-color: black;
+    max-width: 100%;
+    width: 250px;
+    height: 150px;
+    padding: 50px 50px;
+    margin: 30px 30px 30px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .icons {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* Organize all your NFT collections section */
+  .nft-collections {
+    background-color: white;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .organize-box {
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    flex-wrap: wrap;
+    padding: 70px 70px 50px 70px;
+  }
+  .organize {
+    text-align: left;
+    font-family: lato;
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .organize-text {
+    padding: 0 0px;
+  }
+  .organize-cards {
+    max-width: 100%;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .nft-cards {
+    width: 450px;
+    height: auto;
+  }
+  .organize-cta {
+    font-family: lato;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 15px 50px;
+    margin-top: 0;
+    color: white;
+    background-color: #38c947;
+    border-radius: 5px;
+  }
+  .organize-cta:hover {
+    font-family: lato;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 15px 50px;
+    margin-top: 0;
+    color: #38c947;
+    background-color: black;
+    border-radius: 5px;
+  }
+  .organize-cta-div {
+    padding: 0px 0px;
+  }
+
+  /* NFT community section */
+  .nft-community {
+    padding: 80px 0 80px 0;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .community {
+    max-width: 100%;
+    height: auto;
+    padding: 20px 120px 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .community-img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+  }
+  .community-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .com-text-box {
+    text-align: left;
+    font-family: lato;
+    font-size: 70px;
+    line-height: 80px;
+    flex-wrap: wrap;
+  }
+  .com-text {
+    padding: 0 0px;
+  }
+  /* Testimonial section */
+  .Testimonial {
+    width: 80%;
+    color: white;
+    padding: 0 0 80px 0;
+    align-content: center;
+
+    margin: auto;
+  }
+  .Testimonial-header {
+    text-align: center;
+    font-family: lato;
+    font-size: 70px;
+    padding: 70px 0 0 0;
+    line-height: 100px;
+    justify-content: center;
+  }
+  .Testimonial-text {
+    text-align: center;
+  }
+  .creator-box {
+    width: 100%;
+    background-color: #363636;
+    justify-content: center;
+    padding: 30px 0 20px 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-content: center;
+  }
+  .creator-image {
+    padding: 0px 0px;
+  }
+  .creator-img {
+    width: 400px;
+    max-width: 50%;
+    padding: 10px 10px;
+  }
+  .Testimonial-creator-text {
+    padding: 10px 0 10px 0;
+    font-size: 32px;
+  }
+  .arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 0 30px 0px;
+    margin: auto;
+  }
+  #arrow1 {
+    margin: 20px 0 0 30px;
+    border-radius: 2px;
+    padding: 10px;
+  }
+  #arrow2 {
+    margin: 20px 0 0 30px;
+    border-radius: 2px;
+    background-color: #38c947;
+    padding: 10px;
+  }
+  /* footer section */
+  .footer {
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+  }
+  .footer-text {
+    text-align: center;
+    font-family: lato;
+    font-size: 50px;
+    padding: 70px 70px 0 70px;
+  }
+  .top-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .email-form {
+    padding: 80px 0;
+    border-color: grey;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+  }
+  #email {
+    font-size: 12pt;
+    height: 42px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 0 0 0 20px;
+  }
+  .form-button {
+    width: 150px;
+    height: 45px;
+    font-family: lato;
+    font-size: 24px;
+    background-color: #38c947;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+  }
+  .footer2 {
+    background-color: white;
+    display: flex;
+    padding: 20px 70px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer-logo-box {
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .footer-logo {
+    width: 100px;
+    height: auto;
+    margin: auto;
+  }
+  .footer-nav {
+    display: flex;
+    padding: 50px 0px 0 0px;
+    word-spacing: 50px;
+  }
+  .footer-nav li {
+    display: flex;
+    margin: 0 20px 20px 20px;
+    word-spacing: 40px;
+    list-style-type: none;
+    font-family: lato;
+  }
+  .footer-nav li a {
+    color: #000;
+  }
+  .footer-email {
+    margin: auto;
+    padding: 10px 0 10px 0;
+  }
+  .footer-email-box {
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
